@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
 import '../styles/App.css';
 
 class Header extends Component {
   render() {
     return (
-      <header className="App-header">
+      <Container className="App-header">
         <h1>
           Luis C. Vargas
         </h1>
-      </header>
+      </Container>
     );
   }
 }
