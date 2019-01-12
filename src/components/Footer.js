@@ -9,9 +9,14 @@ class Footer extends Component {
     return (
       <Container className="App-footer">
         <Row>
-            <LinkWithText color="black" size="4" url="https://www.linkedin.com/in/luiscvargas/" text="LinkedIn"/>
-            <LinkWithText color="black" size="4" url="https://github.com/" text="Github"/>
-            <LinkWithText color="black" size="4" url="https://twitter.com" text="Twitter"/>
+          <Col xs={{ size: 3, offset: 2 }}>
+            <LinkWithText color="black"
+              url="https://www.linkedin.com/in/luiscvargas/" text="LinkedIn"/>
+            </Col>
+            <Col xs={{ size: 3, offset: 2 }}>
+            <LinkWithText color="black"
+              url="https://github.com/luiscvargas" text="Github"/>
+          </Col>
         </Row>
       </Container>
     );

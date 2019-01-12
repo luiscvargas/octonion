@@ -20,13 +20,11 @@ class LinkWithText extends Component {
   }
   render() {
     return (
-      <Col xs={this.props.xs} md={this.props.xs} lg="4">
         <a href={this.props.url} style={{color: this.state.color}}
           onMouseOut={() => this.onMouseLeave()}
           onMouseOver={() => this.onMouseEnter()}>
           {this.props.text}
         </a>
-    </Col>
     );
   }
 }

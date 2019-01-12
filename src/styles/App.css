@@ -9,23 +9,23 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 12vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 2vmin);
   color: white;
 }
 
 .App-roles {
   background-color: #282c34;
-  min-height: 30vh;
+  min-height: 20vh;
   display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(14px + 2vmin);
   font-family: "Lucida Console", Monaco, monospace;
   color: white;
 }
@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(4px + 2vmin);
   font-family: "Lucida Console", Monaco, monospace;
   color: white;
 }

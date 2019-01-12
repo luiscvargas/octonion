@@ -6,9 +6,7 @@ class Header extends Component {
   render() {
     return (
       <Container className="App-header">
-        <h1>
-          Luis C. Vargas
-        </h1>
+        <h1>{this.props.text}</h1>
       </Container>
     );
   }
