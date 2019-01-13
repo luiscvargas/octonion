@@ -7,13 +7,13 @@ class LinkWithText extends Component {
 
   constructor(props){
     super(props);
-    this.state = {color: "white"};
+    this.state = {color: "black"};
 
     this.onMouseLeave = this.onMouseLeave.bind(this);
     this.onMouseEnter = this.onMouseEnter.bind(this);
   }
   onMouseLeave() {
-    this.setState({color: "white"});
+    this.setState({color: "black"});
   }
   onMouseEnter() {
     this.setState({color: "gray"});

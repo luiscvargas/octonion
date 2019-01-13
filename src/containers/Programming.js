@@ -10,10 +10,8 @@ import '../styles//App.css';
 class Programming extends Component {
   render() {
     return (
-      <div className="App">
-        <Header text="Luis C. Vargas"/>
-        <Roles />
-        <Footer />
+      <div className="Programming">
+        Default page for other programming projects
       </div>
     );
   }

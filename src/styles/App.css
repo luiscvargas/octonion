@@ -1,5 +1,12 @@
+html, body {
+  min-height: 100vh;
+  background-color: #FFFAFA;
+}
+
 .App {
   text-align: center;
+  background-color: #FFFAFA;
+  min-height: 100vh; /* will cover the 100% of viewport */
 }
 
 .App-logo {
@@ -8,30 +15,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(14px + 2vmin);
-  color: white;
+  font-size: calc(11px + 2vmin);
+  color: black;
 }
 
-.App-roles {
-  background-color: #282c34;
+.App-body {
   min-height: 20vh;
   display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: calc(12px + 2vmin);
+  font-family: "Lucida Console", Monaco, monospace;
+  color: black;
+  padding-bottom: 10vh; /* height of your footer */
+}
+
+.App-roles {
   font-size: calc(14px + 2vmin);
   font-family: "Lucida Console", Monaco, monospace;
-  color: white;
 }
 
 .App-footer {
-  background-color: #282c34;
   min-height: 10vh;
   display: block;
   flex-direction: column;
@@ -39,11 +49,14 @@
   justify-content: center;
   font-size: calc(4px + 2vmin);
   font-family: "Lucida Console", Monaco, monospace;
-  color: white;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-link {
+  color: black;
 }
 
 @keyframes App-logo-spin {

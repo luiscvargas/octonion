@@ -7,16 +7,14 @@ import Roles from '../components/Roles';
 import { Container, Row, Col } from 'reactstrap';
 import '../styles//App.css';
 
-class Astrophysics extends Component {
+class Astronomy extends Component {
   render() {
     return (
-      <div className="App">
-        <Header text="Luis C. Vargas"/>
-        <Roles />
-        <Footer />
+      <div className="Astronomy">
+        Default page for astronomy or other science projects / news.
       </div>
     );
   }
 }
 
-export default Astrophysics;
+export default Astronomy;
