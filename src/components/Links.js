@@ -1,32 +1,61 @@
-import React, { Component } from 'react';
 import '../styles/App.css';
-import { Grid, Row, Col} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from 'react';
+import { withRouter } from 'react-router'
 
-class LinkWithText extends Component {
+class LinkButton extends Component {
 
   constructor(props){
     super(props);
-    this.state = {color: "black"};
+  }
 
+  render() {
+    const {
+      history,
+      location,
+      match,
+      staticContext,
+      to,
+      onClick,
+      ...rest
+    } = this.props
+    return (
+      <button
+        {...rest} // `children` is just another prop!
+        onClick={(event) => {
+          onClick && onClick(event)
+          history.push(to)
+        }}
+      />
+    )
+  }
+
+}
+
+class FancyLink extends Component {
+
+  constructor(props){
+    super(props);
     this.onMouseLeave = this.onMouseLeave.bind(this);
     this.onMouseEnter = this.onMouseEnter.bind(this);
   }
+
   onMouseLeave() {
     this.setState({color: "black"});
   }
   onMouseEnter() {
     this.setState({color: "gray"});
   }
+
   render() {
     return (
-        <a href={this.props.url} style={{color: this.state.color}}
-          onMouseOut={() => this.onMouseLeave()}
-          onMouseOver={() => this.onMouseEnter()}>
-          {this.props.text}
-        </a>
-    );
+      <a style={{color: "black"}} href="{this.props.url}">
+        {this.props.text}
+      </a>
+    )
   }
+
 }
 
-export default LinkWithText;
+export { FancyLink }; // named exports must be in { } just as named imports
+export default withRouter(LinkButton);

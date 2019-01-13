@@ -10,7 +10,7 @@ import '../styles//App.css';
 class Astronomy extends Component {
   render() {
     return (
-      <div className="Astronomy">
+      <div className="App-astronomy">
         Default page for astronomy or other science projects / news.
       </div>
     );

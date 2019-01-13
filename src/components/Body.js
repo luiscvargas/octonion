@@ -7,7 +7,7 @@ import Programming from '../containers/Programming'
 
 class Body extends Component {
   render() {
-      return (
+    return (
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/astronomy' component={Astronomy}/>

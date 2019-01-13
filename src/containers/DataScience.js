@@ -10,7 +10,7 @@ import '../styles//App.css';
 class DataScience extends Component {
   render() {
     return (
-      <div className="DataScience">
+      <div className="App-datascience">
         Default page for data science / machine learning.
       </div>
     );

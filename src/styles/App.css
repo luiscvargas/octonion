@@ -15,7 +15,7 @@ html, body {
 }
 
 .App-header {
-  min-height: 25vh;
+  min-height: 18vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,11 +36,6 @@ html, body {
   padding-bottom: 10vh; /* height of your footer */
 }
 
-.App-roles {
-  font-size: calc(14px + 2vmin);
-  font-family: "Lucida Console", Monaco, monospace;
-}
-
 .App-footer {
   min-height: 10vh;
   display: block;
@@ -50,13 +45,38 @@ html, body {
   font-size: calc(4px + 2vmin);
   font-family: "Lucida Console", Monaco, monospace;
   color: black;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
 
+.App-routes {
+  min-height: 10vh;
+}
+
+.App-astronomy {
+  padding-bottom: 10vh; /* height of your footer */
+}
+
+.App-datascience {
+  padding-bottom: 10vh; /* height of your footer */
+}
+
+.App-programming {
+  padding-bottom: 10vh; /* height of your footer */
+}
+
+.jumbotron {
+  height: 45vh; /* jumbotron height = combined height of main-link */
+}
+
 .main-link {
   color: black;
+  display: block;
+  height: 15vh;
+  width: 100%;
+  position: relative;
+  font-size: calc(4px + 2vmin);
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 @keyframes App-logo-spin {

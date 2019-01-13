@@ -10,7 +10,7 @@ import '../styles//App.css';
 class Programming extends Component {
   render() {
     return (
-      <div className="Programming">
+      <div className="App-programming">
         Default page for other programming projects
       </div>
     );
