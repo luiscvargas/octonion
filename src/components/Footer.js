@@ -9,6 +9,11 @@ class Footer extends Component {
     return (
       <Container className="App-footer">
         <Row>
+          <Col style={{textAlign: "center", fontSize: "2vh"}}>
+            This website was built with react.js, react-router, and Bootstrap components.
+          </Col>
+        </Row>
+        <Row>
           <Col style={{textAlign: "center"}} xs={{ size: 3, offset: 3 }}>
             <FancyLink color="black"
               url="https://www.linkedin.com/in/luiscvargas/" text="LinkedIn"/>
