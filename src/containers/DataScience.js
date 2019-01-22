@@ -10,9 +10,12 @@ import '../styles//App.css';
 class DataScience extends Component {
   render() {
     return (
-      <Container className="App-datascience">
-        Default page for data science / machine learning.
-      </Container>
+      <React.Fragment>
+        <Header text='Luis C Vargas: Data Science'/>
+        <Container className="App-datascience">
+          Default page for data science / machine learning.
+        </Container>
+      </React.Fragment>
     );
   }
 }

@@ -14,12 +14,8 @@ class BlogEntry extends Component {
   render() {
     return (
       <React.Fragment>
-      <div>
         <h4>{this.props.title}</h4>
-      </div>
-      <div>
-        <p>This is the body of the sample blog entry</p>
-      </div>
+        <div>{this.props.children}</div>
     </React.Fragment>
     )
   }

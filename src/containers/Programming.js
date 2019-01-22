@@ -10,9 +10,12 @@ import '../styles//App.css';
 class Programming extends Component {
   render() {
     return (
-      <Container className="App-programming">
-        Default page for other programming projects
-      </Container>
+      <React.Fragment>
+        <Header text='Luis C Vargas: Programming'/>
+        <Container className="App-programming">
+          Default page for other programming projects
+        </Container>
+      </React.Fragment>
     );
   }
 }

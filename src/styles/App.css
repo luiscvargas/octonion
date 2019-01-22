@@ -62,7 +62,6 @@ html, body {
   opacity: 50%;
   height: 50vh;
   color: white;
-  overflow-y: auto;
   font-size: 13px;
   font-family: sans-serif;
 }
@@ -70,6 +69,8 @@ html, body {
 .App-astronomy-blog {
   font-size: 12px;
   text-align: justify;
+  overflow-y: scroll;
+  height: 50vh; /*needed for scroll*/
 }
 
 .App-datascience {

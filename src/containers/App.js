@@ -11,7 +11,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header text='Luis C Vargas'/>
         <Body />
         <Footer />
       </div>
