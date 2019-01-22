@@ -55,6 +55,21 @@ html, body {
 
 .App-astronomy {
   padding-bottom: 10vh; /* height of your footer */
+  background-image: url('../images/m31.jpg');
+  repeat: false;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  height: 50vh;
+  color: white;
+  overflow-y: auto;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.App-astronomy-blog {
+  font-size: 12px;
+  text-align: justify;
 }
 
 .App-datascience {

@@ -44,12 +44,12 @@ class FancyLink extends Component {
     this.setState({color: "black"});
   }
   onMouseEnter() {
-    this.setState({color: "gray"});
+    this.setState({color: "red"});
   }
 
   render() {
     return (
-      <a style={{color: "black"}} href="{this.props.url}">
+      <a style={{color: "black"}} href={this.props.url}>
         {this.props.text}
       </a>
     )
